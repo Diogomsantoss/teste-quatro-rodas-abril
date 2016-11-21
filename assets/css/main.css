@@ -3285,12 +3285,17 @@ body {
     float: left;
     width: 100%;
   }
+  .fa-chevron-down:before {
+    display: none;
+  }
   #banner_top .red-stripe-header .container .header-strip .right-tier-header .form-search-wrapper {
     display: none;
   }
   #banner_top .red-stripe-header .container .header-strip .right-tier-header .header-menu-nav .header-menu .menu-item {
     border-bottom: 1px solid #bb0000;
     position: relative;
+    height: 52px;
+    line-height: 30px;
   }
   #banner_top .red-stripe-header .container .header-strip .right-tier-header .header-menu-nav .header-menu .menu-item:hover {
     background-color: #bb0000;
