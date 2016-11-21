@@ -1,0 +1,14 @@
+/*
+Theme Name: Quatro Rodas
+Author: Diogo Santos
+Author URI: http://diogomoura.esy.es
+Description: Tema Base para o desenvolvimento do teste quatro rodas abril.
+Version: 0.1
+*/
+
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}

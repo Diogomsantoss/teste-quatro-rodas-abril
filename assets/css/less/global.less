@@ -1,0 +1,392 @@
+body{
+  background: #e6e6e6;
+  font-family: "Dosis";
+
+}
+
+
+#banner_top { 
+  .container {
+    text-align: center;
+    padding: 0;
+
+    .img-banner-promo-wrapper {
+      text-align: center;
+      margin: 10px auto;
+      float: none;
+      .banner-promo {
+        width: 100%;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .red-stripe-header {
+    background-color: @red-quatro-rodas;
+    position: relative;
+
+
+
+    &.scroll {
+      position: fixed;
+      width: 100%;
+      top: -150px;
+      z-index: 70;
+      .transition(250ms all linear);
+
+      .logo-quatro-rodas {
+        width: 70%;
+      }
+
+    }
+
+    &.sticky {
+      display: block;
+      .translate3d(0,150px,0);
+    }
+
+    .hamburguer-menu-wrapper {
+      display: none;
+      position: relative;
+      right: 10px;
+      margin-left: 90%;
+      top: 0;
+      margin-top: 0%;
+      padding-top: 20px;
+      margin-bottom: -62px;
+      z-index: 100;
+      .menu-hamburguer-link { 
+        text-decoration: none;
+        color: white;
+        z-index: 100;
+        .fa {
+          color: white;
+          font-size: 3rem;
+          z-index: 100;
+        }
+      }
+    }
+
+    .search-mobile {
+      display: none;
+      position: absolute;
+      left: 15px;
+      top: 25px;
+      .search-mobile-link {
+        text-decoration: none;
+
+        .fa-search {
+          color: white;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .container {
+      .header-strip {
+        .left-tier-header {
+          .logo-quatro-rodas {
+            width: 85%;
+            margin: 25px auto;
+
+            &.small-logo {
+              width: 40%;
+              float: left;
+              margin-top: 10px;
+              margin-bottom: 0;
+            }
+          }
+          .social-icons {
+            color: white;
+            font-size: 1.8rem;
+            margin-top: 10px;
+            span {
+              margin: 5px;
+              a {
+                color: white;
+                text-decoration: none;
+              }
+              
+            }
+          }
+        }
+        .right-tier-header { 
+          position: relative;
+
+
+
+          .header-menu-nav {
+            color: white;
+            display: inline-block;
+            margin: 0 auto;
+
+            &.scroll-nav {
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+
+            .header-menu {
+              color: white;
+              display: inline-block;
+
+              &.fixed-menu {
+                .menu-item { 
+                  height: 30px;
+                  line-height: 1; 
+                }
+              }
+
+              .menu-item {
+                color: white;
+                display: inline-block;
+                padding: 10px 14px;
+                line-height: 80px;
+                position: relative;
+                height: 105px;
+                .transition(250ms all linear);
+
+
+                &.expandable {
+                  &:after {
+                    display: none;
+                    font-family: 'FontAwesome';
+                    content: "\f078";
+                    color: white;
+                    position: absolute;
+                    right: 0px;
+                    font-size: 1.2rem;
+                    top: 10px;
+                  }
+                }
+
+                &:hover {
+                  background-color: @gray-background;
+                }
+
+                .menu-link {
+                  color: white;
+                  text-decoration: none;
+                  font-weight: 700;
+                  text-transform: uppercase;
+
+                  .fa {
+                    font-size: 1.5rem;
+                  }
+
+                }
+              }
+            }
+
+
+          }
+          .form-search-wrapper {
+            display: inline-block;
+            .search-form-header {
+
+              &.fixed {
+                &:after {
+                 font-family: 'FontAwesome';
+                 content: "\f002";
+                 color: #AAA;
+                 position: absolute;
+                 right: 60px;
+                 top: 15px;
+                 display: block;
+
+               }
+             }
+
+             &:after {
+               font-family: 'FontAwesome';
+               content: "\f002";
+               color: #AAA;
+               position: absolute;
+               right: 60px;
+               top: 40px;
+               display: block;
+
+             }
+             .campo-form {
+              border: 0;
+              color: black;
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.gray-stripe-header {
+  background-color: @gray-background;
+
+  .sub-menu-header {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 75;
+    background-color: @gray-background;
+    border-bottom: 2px solid @red-quatro-rodas;
+    .container {
+      .col-sub-menu {
+        padding-top: 25px;
+        .btn-see-all {
+          background-color: @gray-background + 50;
+          color: white;
+          text-decoration: none;
+          padding: 3px 20px;
+          margin-top: 50px;
+        }
+
+        .sub-menu-collist {
+          .menu-item {
+            padding: 8px;
+            text-align: left;
+            &:hover {
+              background-color: @red-quatro-rodas;
+            }
+            .menu-link {
+              color: white;
+              text-decoration: none;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-links-second-row {
+    background-color: #242424;
+
+    .second-row {
+      color: white;
+      display: inline-block;
+      .links-bottom-item {
+        padding: 5px 15px;
+        display: inline-block;
+        .transition(250ms all linear);
+        position: relative; 
+
+        &:hover {
+          background-color: @red-quatro-rodas;
+
+          &:before {
+            opacity: 1;
+          }
+          &:after {
+            opacity: 1;
+          }
+        }
+
+        &:after {
+          opacity: 0;
+          content: "";
+          display: inline;
+          position: absolute;
+          right: -23px;
+          top: 0px;
+          width: 55px;
+          height: 30px;
+          background: @red-quatro-rodas;
+          -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 67% 100%, 93% 50%, 67% 0);
+          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 67% 100%, 93% 50%, 67% 0);
+
+
+        }
+
+        &:before {
+          opacity: 0;
+          content: "";
+          display: inline;
+          position: absolute;
+          right: -14px;
+          top: 0;
+          width: 15px;
+          height: 30px;
+          background: @red-quatro-rodas;
+          -webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+          clip-path: polygon(0 0, 0% 100%, 100% 50%);
+        }
+
+        .menu-link {
+          text-transform: uppercase;
+          color: white;
+        }
+      }
+    }
+  }
+
+}
+
+}
+
+
+
+#content-home {
+  background: #e6e6e6;
+  .container {
+
+    .first-row-home { 
+      overflow: hidden;
+      padding: 0;
+      height: 415px;
+      margin-top: 5px;
+      margin-bottom: 25px;
+      width: 102%;
+      .left-home-first-line {
+        padding: 0;
+        width: 46%;
+        .promo-home-thumb {
+          width: 98%;
+        }
+      }
+
+      .right-home-first-line {
+        padding: 0;
+        width: 52%;
+        .row {
+          .thumb-item-wrapper {
+            padding: 0;
+            .thumb-item-destaques-home {
+              width: 99%;
+            }
+          }
+        }
+      }
+
+    }
+
+    .second-row {
+      margin: 15px auto;
+      margin-left: -15px;
+
+      .item-second-row-wrapper {
+        padding: 5px;
+        .item-second-row {
+          .thumb-secound-row  {
+            width: 100%;
+          }
+          .title-item {
+            font-weight: bolder;
+          }
+          .exerpt-item {
+            font-weight: 700;
+          }
+          .more-about {
+            text-decoration: none;
+            color: @red-quatro-rodas;
+            font-weight: 700; 
+            text-transform: uppercase;
+          }
+
+        }
+
+      }
+    }
+  }
+}
